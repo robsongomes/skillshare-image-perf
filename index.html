@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      img {
+        display: block;
+        width: 640px;
+        height: 420px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <picture>
+        <source media="(max-width: 748px)" srcset="images/food1.jpg" />
+        <source media="(min-width: 749px)" srcset="images/food2.jpg" />
+        <img src="images/food1.jpg" alt="" />
+      </picture>
+    </section>
+    <img src="images/camp.jpg" alt="" />
+    <img src="images/camp.jpg" alt="" />
+    <footer>
+      <img loading="lazy" src="images/food3.jpg" alt="" />
+      <img loading="lazy" src="images/food4.jpg" alt="" />
+    </footer>
+  </body>
+</html>
